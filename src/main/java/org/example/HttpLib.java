@@ -10,7 +10,7 @@ public class HttpLib {
     }
 
     public String getApiResponse(){
-        var request = new Request.Builder().url("https://example.com").build();
+        var request = new Request.Builder().url("https://dummy.restapiexample.com/api/v1/employees").build();
         try (var response = client.newCall(request).execute()) {
             return response.body().string();
         } catch (Exception e) {
